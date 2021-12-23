@@ -1,3 +1,7 @@
+git config --global user.email zad1264@naver.com
+git config --global user.name ChoiWonBeen
+(싸지방 초기 세팅용)
+
 # inexperienced
 써본 적 없는 것들 써보는 프로젝트
 
