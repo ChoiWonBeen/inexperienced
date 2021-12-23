@@ -8,9 +8,10 @@ git config --global user.name ChoiWonBeen
 
 ## 목표
 - HTML
-  - media Elements
-    - video
-    - audio
+  - ~~media Elements~~
+    - ~~video~~
+    - ~~audio~~
+  - **animation & transition**
   - canvas
   - file download
   - semantic web
