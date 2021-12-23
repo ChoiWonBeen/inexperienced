@@ -1,4 +1,5 @@
 git config --global user.email zad1264@naver.com
+
 git config --global user.name ChoiWonBeen
 (싸지방 초기 세팅용)
 
