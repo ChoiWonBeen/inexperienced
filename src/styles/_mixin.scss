@@ -7,6 +7,3 @@
 @mixin pc {
   @media (min-width: 1200px) { @content; }
 }
-@mixin bigpc {
-  @media (min-width: 1800px) { @content; }
-}
