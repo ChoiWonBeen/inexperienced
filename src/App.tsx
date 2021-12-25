@@ -1,15 +1,15 @@
 import React from 'react';
 
-import './App.scss';
+import './styles/global.scss';
 
 import HeaderComponent from './components/Header/HeaderComponent';
-import CanvasComponent from './components/Canvas/CanvasComponent';
+import MainComponent from './components/Main/MainComponent';
 
 function App() {
   return (
     <div className="App">
       <HeaderComponent />
-      <CanvasComponent />
+      <MainComponent />
     </div>
   );
 }

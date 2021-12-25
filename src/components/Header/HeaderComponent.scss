@@ -1,0 +1,8 @@
+@import "../../styles/mixin";
+
+.header {
+  height: 200px;
+  @include mobile {
+    height: 50px;
+  }
+}
