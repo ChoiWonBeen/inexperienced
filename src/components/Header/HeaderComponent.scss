@@ -1,6 +1,7 @@
 @import "../../styles/mixin";
 
 .header {
+  padding : 20px;
   @include mobile {
     height: 50px;
   }
@@ -9,5 +10,14 @@
   }
   @include pc {
     height: 200px;
+  }
+}
+
+.icon {
+  width: 32px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1) rotate(120deg);
+    transition: 0.3s;
   }
 }
