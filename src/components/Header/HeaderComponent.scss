@@ -1,6 +1,6 @@
 @import "../../styles/mixin";
 
-.header {
+header {
   padding : 20px;
   @include mobile {
     height: 50px;

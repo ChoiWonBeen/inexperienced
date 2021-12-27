@@ -6,9 +6,9 @@ interface CanvasComponentProps {
  
 const CanvasComponent: React.FC<CanvasComponentProps> = () => {
   return ( 
-    <div className="canvas">
+    <section className="canvas">
       canvas
-    </div>
+    </section>
    );
 }
  

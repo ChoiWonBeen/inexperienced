@@ -8,9 +8,9 @@ interface HeaderComponentProps {
  
 const HeaderComponent: React.FunctionComponent<HeaderComponentProps> = () => {
   return ( 
-    <div className="header">
+    <header>
       <SettingIcon className='icon'/>
-    </div>
+    </header>
    );
 }
  
