@@ -2,7 +2,26 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: 'NotoSans';
+  font-weight: normal;
+  src: url("../assets/fonts/NotoSansKR-Regular.otf");
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-weight: bold;
+  src: url("../assets/fonts/NotoSansKR-Bold.otf");
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-weight: lighter;
+  src: url("../assets/fonts/NotoSansKR-Light.otf");
+}
+
 .App {
   font-size: 18px;
   text-align: center;
+  font-family: 'NotoSans';
 }
