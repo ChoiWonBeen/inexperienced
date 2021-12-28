@@ -1,0 +1,9 @@
+@import "../../styles/mixin";
+
+footer {
+  background-color: rgb(31, 47, 78);
+  color: white;
+  @include mobile { height: 300px; }
+  @include tablet { height: 300px; }
+  @include pc { height: 300px; }
+}

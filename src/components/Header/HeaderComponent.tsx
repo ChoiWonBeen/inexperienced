@@ -2,9 +2,7 @@ import React from 'react';
 import "./HeaderComponent.scss"
 import { ReactComponent as SettingIcon } from "../../assets/svg/setting.svg";
 
-interface HeaderComponentProps {
-  
-}
+interface HeaderComponentProps { }
  
 const HeaderComponent: React.FunctionComponent<HeaderComponentProps> = () => {
   return ( 

@@ -1,8 +1,6 @@
 import React from 'react';
 
-interface CanvasComponentProps {
-  
-}
+interface CanvasComponentProps { }
  
 const CanvasComponent: React.FC<CanvasComponentProps> = () => {
   return ( 
