@@ -6,7 +6,7 @@ export interface FooterComponentProps {};
 const FooterComponent: React.FC<FooterComponentProps> = (props) => {
   return (
     <footer>
-      Footer
+      Footer는 grid로 구성
     </footer>
   );
 }

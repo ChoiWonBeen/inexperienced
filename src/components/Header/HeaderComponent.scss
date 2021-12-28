@@ -14,8 +14,11 @@ header {
 }
 
 .icon {
-  width: 32px;
+  width: 40px;
   cursor: pointer;
+  position: fixed;
+  top: 24px;
+  right: 30px;
   &:hover {
     transform: scale(1.1) rotate(120deg);
     transition: 0.3s;
