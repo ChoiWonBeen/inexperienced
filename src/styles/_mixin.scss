@@ -7,3 +7,9 @@
 @mixin pc {
   @media (min-width: 1200px) { @content; }
 }
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

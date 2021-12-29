@@ -7,9 +7,7 @@ header {
     height: 40px;
     width: calc(100% - 40px);
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
   }
   @include tablet {
     height: 100px;

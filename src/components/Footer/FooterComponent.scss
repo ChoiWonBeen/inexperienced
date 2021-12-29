@@ -9,3 +9,11 @@ footer {
   @include tablet { height: 300px; }
   @include pc { height: 300px; }
 }
+
+.copyright {
+  height: 30px;
+  font-size: 12px;
+  background-color: #1e293e;
+  color: white;
+  @include flex-center;
+}
