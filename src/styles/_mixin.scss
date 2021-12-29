@@ -8,6 +8,8 @@
   @media (min-width: 1200px) { @content; }
 }
 
+// @extend 문법으로 교체해볼 생각도 해볼법 할 듯.
+// extend 수가 늘어난다면 directory 생성 후, 분류해서 작성하자.
 @mixin flex-center {
   display: flex;
   justify-content: center;

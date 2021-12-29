@@ -1,5 +1,6 @@
 @import "../../styles/mixin";
 
 .canvas {
+  height: 600px;
   @include mobile { padding-top: 90px; }
 }
