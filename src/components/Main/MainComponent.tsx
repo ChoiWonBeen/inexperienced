@@ -1,4 +1,5 @@
 import React from 'react';
+import './MainComponent.scss';
 
 interface CanvasComponentProps { }
  

@@ -1,9 +1,15 @@
 @import "../../styles/mixin";
 
 header {
-  padding : 20px;
+  padding : 25px;
+  text-align: left;
   @include mobile {
-    height: 50px;
+    height: 40px;
+    width: calc(100% - 40px);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   @include tablet {
     height: 100px;
@@ -23,4 +29,11 @@ header {
     transform: scale(1.1) rotate(120deg);
     transition: 0.3s;
   }
+}
+
+.logo__text {
+  font-family: 'Heading-Pro';
+  @include mobile { font-size: 32px; }
+  @include tablet { font-size: 36px; }
+  @include pc { font-size: 40px; }
 }

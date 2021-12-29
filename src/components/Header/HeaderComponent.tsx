@@ -7,7 +7,7 @@ interface HeaderComponentProps { }
 const HeaderComponent: React.FunctionComponent<HeaderComponentProps> = () => {
   return ( 
     <header>
-      <h1>제목 부분입니다.</h1>
+      <div className="logo__text">INEXPERIENCED</div>
       <SettingIcon className='icon'/>
     </header>
    );
