@@ -8,6 +8,9 @@ const HeaderComponent: React.FunctionComponent<HeaderComponentProps> = () => {
   return ( 
     <header>
       <div className="logo__text">INEXPERIENCED</div>
+      <div className='header__links'>
+        something
+      </div> 
       <SettingIcon className='icon'/>
     </header>
    );
