@@ -1,14 +1,17 @@
 import React from 'react';
 import './MainComponent.scss';
 
-interface CanvasComponentProps { }
+import MainMenuComponent from "./MainMenu/MainMenuComponent";
+
+interface MainComponentProps { }
  
-const CanvasComponent: React.FC<CanvasComponentProps> = () => {
+const MainComponent: React.FC<MainComponentProps> = () => {
+  
   return ( 
-    <section className="canvas">
-      canvas
+    <section className='main'>
+      <MainMenuComponent />
     </section>
    );
 }
  
-export default CanvasComponent;
+export default MainComponent;
