@@ -33,6 +33,9 @@ header {
     transform: scale(1.1) rotate(120deg);
     transition: 0.3s;
   }
+  &:active {
+    transform: scale(0.9) rotate(240deg);
+  }
 }
 
 .logo__text {
