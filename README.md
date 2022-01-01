@@ -11,7 +11,6 @@ git config --global user.name ChoiWonBeen
   - ~~media Elements~~
     - ~~video~~
     - ~~audio~~
-  - **animation & transition**
   - canvas
   - file download
   - semantic web
@@ -22,6 +21,7 @@ git config --global user.name ChoiWonBeen
     - SCSS
     - Sass
   - grid
+  - **animation & transition**
   - 다양한 선택자 활용
   - 깔끔한 반응형
 
