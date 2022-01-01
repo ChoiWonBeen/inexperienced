@@ -29,9 +29,9 @@ header {
   position: fixed;
   top: 24px;
   right: 30px;
+  transition: 0.3s;
   &:hover {
     transform: scale(1.1) rotate(120deg);
-    transition: 0.3s;
   }
   &:active {
     transform: scale(0.9) rotate(240deg);
@@ -40,6 +40,7 @@ header {
 
 .logo__text {
   font-family: 'Heading-Pro';
+  cursor: pointer;
   @include mobile { font-size: 32px; }
   @include tablet { font-size: 36px; }
   @include pc { font-size: 40px; }
