@@ -30,7 +30,9 @@ git config --global user.name ChoiWonBeen
 
 - Library
   - React + Recoil
+  - chart library
+  - framer motion
 
 - etc
-  - lazy loading
+  - ~~lazy loading~~
   - indexedDB 써보기
