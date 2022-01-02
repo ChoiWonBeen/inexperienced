@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { TodoistApi } from '@doist/todoist-api-typescript'
 
 import "./TodoListComponent.scss";
@@ -10,9 +10,16 @@ export interface TodoListComponentProps {};
 
 const TodoListComponent: React.FC<TodoListComponentProps> = (props) => {
   
-  api.getProjects()
-    .then((projects) => console.log(projects))
+  useEffect(() => {
+    api.getTasks()
+    .then((task) => {
+      task.map(t => {
+        console.log(t)
+      })
+    })
     .catch((error) => console.log(error))
+  }, [])
+  
   return (
     <div>
         
