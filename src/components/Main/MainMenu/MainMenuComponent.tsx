@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion"
+
 import "./MainMenuComponent.scss";
 
 export interface MainMenuProps {};

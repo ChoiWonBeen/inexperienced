@@ -1,0 +1,23 @@
+import React from "react";
+import { TodoistApi } from '@doist/todoist-api-typescript'
+
+import "./TodoListComponent.scss";
+
+const API_KEY = "ba36d45b618f5ff6b53db6ac4ca2ec400c23ff25";
+const api = new TodoistApi(API_KEY);
+
+export interface TodoListComponentProps {};
+
+const TodoListComponent: React.FC<TodoListComponentProps> = (props) => {
+  
+  api.getProjects()
+    .then((projects) => console.log(projects))
+    .catch((error) => console.log(error))
+  return (
+    <div>
+        
+    </div>
+  );
+}
+
+export default TodoListComponent;
