@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import { TodoistApi } from '@doist/todoist-api-typescript'
+import { TodoistApi } from '@doist/todoist-api-typescript';
+import { useRecoilState, useSetRecoilState } from "recoil";
 
 import "./TodoListComponent.scss";
 
@@ -14,7 +15,7 @@ const TodoListComponent: React.FC<TodoListComponentProps> = (props) => {
     api.getTasks()
     .then((task) => {
       task.map(t => {
-        console.log(t)
+        return console.log(t)
       })
     })
     .catch((error) => console.log(error))
@@ -22,7 +23,7 @@ const TodoListComponent: React.FC<TodoListComponentProps> = (props) => {
   
   return (
     <div>
-        
+      
     </div>
   );
 }
