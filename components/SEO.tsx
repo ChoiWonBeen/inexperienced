@@ -7,9 +7,7 @@ export default function SEO(){
 
   return (
     <Head>
-      <title>
-        {`To Do It! | ${titleText}`}
-      </title>
+      <title> {`To Do It! | ${titleText}`} </title>
     </Head>
   )
 }
