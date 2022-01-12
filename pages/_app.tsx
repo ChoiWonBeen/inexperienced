@@ -7,6 +7,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   html {
     font-size: 18px;
+    font-family: "Noto Sans KR";
   }
 
   body {
