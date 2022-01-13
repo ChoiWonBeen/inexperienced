@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app';
 import { RecoilRoot } from 'recoil';
-import SEO from '../components/SEO';
-import Header from '../components/Header';
+import SEO from '../components/shared/SEO';
+import Header from '../components/shared/Header';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
