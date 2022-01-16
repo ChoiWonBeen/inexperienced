@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const WinrateWrapper = styled.div`
-  margin-top: 20px;
+  
 `
 
 const Card = styled.div`
