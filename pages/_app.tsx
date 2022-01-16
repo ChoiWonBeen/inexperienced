@@ -3,6 +3,7 @@ import { RecoilRoot } from 'recoil';
 import SEO from '../components/shared/SEO';
 import Header from '../components/shared/Header';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { theme } from '../static/theme.ts';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -16,15 +17,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 `
-
-const theme = {
-  colors: {
-    primary: '#e67e22',
-    primaryThick: '#d35400',
-    secondary: '#e74c3c',
-    brown: '#642A02',
-  },
-}
 
 export default function MyApp({ Component, pageProps }: AppProps) {
 

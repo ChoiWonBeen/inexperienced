@@ -5,10 +5,10 @@ const WinrateWrapper = styled.div`
 `
 
 const Card = styled.div`
-  border: 1px #d0d7de solid;
+  border: 1px ${({theme}) => theme.colors.borderDefault} solid;
   border-radius: 6px;
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
 `
 
 export default function Winrate(){
