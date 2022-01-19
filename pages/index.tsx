@@ -43,6 +43,7 @@ export default function MainPage<NextPage>(){
 	
 	const tempTodo = [
 		{
+			id: 1,
 			title: "Daily Todo",
 			due: "2022-01-20",
 			data: [
@@ -55,6 +56,7 @@ export default function MainPage<NextPage>(){
 			]
 		},
 		{
+			id: 2,
 			title: "Weekly Todo",
 			due: "2022-01-27",
 			data: [
@@ -81,7 +83,7 @@ export default function MainPage<NextPage>(){
 			<DailyTodoGrid>
 				<>
 					{tempTodo.map((todoList) => {
-						return <DailyTodo todoList={todoList}></DailyTodo>
+						return <DailyTodo todoList={todoList} key={todoList.id}></DailyTodo>
 					})}
 				</>
 			</DailyTodoGrid>

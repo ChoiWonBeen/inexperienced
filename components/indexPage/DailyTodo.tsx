@@ -32,11 +32,28 @@ const TodoList = styled.div`
 `
 
 const Todo = styled.div`
+	cursor: pointer;
 	padding: 5px;
 	border: 1px ${({theme}) => theme.colors.borderDefault} solid;
 	border-radius: 5px;
 `
 
+const Desc = styled.span`
+	
+`
+
+const TimeLeft = styled.span`
+	float: right;
+`
+
+const CheckBox = styled.input`
+	float: right;
+`
+
+function getLeftTime(t: string): string{
+	
+	// Math.floor((new Date(t) - new Date()) / 1000 / 60 / 60)
+}
 
 export default function DailyTodo({todoList}){
 	return (
@@ -48,10 +65,16 @@ export default function DailyTodo({todoList}){
 			</SubTitleWrapper>
 			<TodoListWrapper>
 				<TodoList>
-					{todoList.data.map((data) => {
+					{todoList.data.map((data, idx) => {
 						return (
-							<Todo>
-								{data.desc}
+							<Todo key={idx}>
+								<Desc>
+									{data.desc}
+								</Desc>
+								<CheckBox type="checkbox"></CheckBox>
+								<TimeLeft>
+									21h left
+								</TimeLeft>
 							</Todo>
 						)
 					})}
