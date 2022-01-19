@@ -6,7 +6,7 @@ import DailyTodo from '../components/indexPage/DailyTodo';
 import Calendar from '../components/indexPage/Calendar';
 
 const HomeWrapper = styled.div`
-  min-height: calc(100vh - 112px);
+  min-height: calc(100vh - 132px);
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -16,30 +16,58 @@ const HomeWrapper = styled.div`
 `
 
 const WinrateGrid = styled.div`
-  display: grid;
+	border: 1px ${({theme}) => theme.colors.borderDefault} solid;
   grid-column: 2/5;
   grid-row: 1/1;
 `
 
 const SideLinkGrid = styled.div`
-  display: grid;
+	border: 1px ${({theme}) => theme.colors.borderDefault} solid;
   grid-column: 1/1;
   grid-row: 1/6;
 `
 
 const DailyTodoGrid = styled.div`
-  display: grid;
+	border: 1px ${({theme}) => theme.colors.borderDefault} solid;
   grid-column: 2/5;
   grid-row: 2/5;
 `
 
 const CalendarGrid = styled.div`
-  display: grid;
+	border: 1px ${({theme}) => theme.colors.borderDefault} solid;
   grid-column: 5/6;
   grid-row: 1/3;
 `
 
 export default function MainPage<NextPage>(){
+	
+	const tempTodo = [
+		{
+			title: "Daily Todo",
+			due: "2022-01-20",
+			data: [
+				{
+					desc: "커밋 1개 하기"
+				},
+				{
+					desc: "알고리즘 1문제 풀기"
+				}
+			]
+		},
+		{
+			title: "Weekly Todo",
+			due: "2022-01-27",
+			data: [
+				{
+					desc: "좋은 글 1개 읽기"
+				},
+				{
+					desc: "비기너 강의 준비하기"
+				}
+			]
+		}
+	]
+	
   return (
     <HomeWrapper>
 			<SideLinkGrid>
@@ -51,7 +79,11 @@ export default function MainPage<NextPage>(){
       </WinrateGrid>
 			
 			<DailyTodoGrid>
-				<DailyTodo></DailyTodo>
+				<>
+					{tempTodo.map((todoList) => {
+						return <DailyTodo todoList={todoList}></DailyTodo>
+					})}
+				</>
 			</DailyTodoGrid>
 			
 			<CalendarGrid>
