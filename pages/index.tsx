@@ -45,19 +45,19 @@ export default function MainPage<NextPage>(){
   return (
     <HomeWrapper>
 			<SideLinkGrid>
-				<IndexWithTitle Component={Shortcut} titleText="ShortCut"></IndexWithTitle>
+				<IndexComponentWithTitle Component={Shortcut} titleText="ShortCut"></IndexComponentWithTitle>
 			</SideLinkGrid>
 			
       <WinrateGrid>
-        <IndexWithTitle Component={Winrate} titleText="My Winrate"></IndexWithTitle>
+        <IndexComponentWithTitle Component={Winrate} titleText="My Winrate"></IndexComponentWithTitle>
       </WinrateGrid>
 			
 			<DailyTodoGrid>
-				<IndexWithTitle Component={DailyTodo} titleText="My Todo"></IndexWithTitle>
+				<IndexComponentWithTitle Component={DailyTodo} titleText="My Todo"></IndexComponentWithTitle>
 			</DailyTodoGrid>
 			
 			<CalendarGrid>
-				<IndexWithTitle Component={Calendar} titleText="Calendar"></IndexWithTitle>
+				<IndexComponentWithTitle Component={Calendar} titleText="Calendar"></IndexComponentWithTitle>
 			</CalendarGrid>
     </HomeWrapper>
   )
