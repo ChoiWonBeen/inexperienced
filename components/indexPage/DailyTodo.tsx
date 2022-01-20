@@ -4,10 +4,6 @@ const DailyTodoWrapper = styled.div`캡
 	margin-bottom: 10px;
 `
 
-const Title = styled.div`
-	${({theme}) => theme.titleMixin};
-`
-
 const Block = styled.div`
 	margin-top: 10px;
 `
@@ -104,12 +100,9 @@ export default function DailyTodo(){
 	
 	return (
 		<DailyTodoWrapper>
-			<Title>
-				Todo List
-			</Title>
 			{tempTodo.map((todoList) => {
 				return (
-				<Block>
+				<Block key={todoList.id}>
 					<SubTitleWrapper>
 						<SubTitle>
 							{todoList.title}

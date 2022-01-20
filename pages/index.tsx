@@ -4,6 +4,7 @@ import SideLink from '../components/indexPage/SideLink';
 import Winrate from '../components/indexPage/Winrate';
 import DailyTodo from '../components/indexPage/DailyTodo';
 import Calendar from '../components/indexPage/Calendar';
+import IndexWithTitle from '../components/indexPage/IndexWithTitle';
 
 const HomeWrapper = styled.div`
   min-height: calc(100vh - 132px);
@@ -44,19 +45,19 @@ export default function MainPage<NextPage>(){
   return (
     <HomeWrapper>
 			<SideLinkGrid>
-				<SideLink></SideLink>
+				<IndexWithTitle Component={SideLink} titleText="ShortCut"></IndexWithTitle>
 			</SideLinkGrid>
 			
       <WinrateGrid>
-        <Winrate></Winrate>
+        <IndexWithTitle Component={Winrate} titleText="My Winrate"></IndexWithTitle>
       </WinrateGrid>
 			
 			<DailyTodoGrid>
-				<DailyTodo></DailyTodo>
+				<IndexWithTitle Component={DailyTodo} titleText="My Todo"></IndexWithTitle>
 			</DailyTodoGrid>
 			
 			<CalendarGrid>
-				<Calendar></Calendar>
+				<IndexWithTitle Component={Calendar} titleText="Calendar"></IndexWithTitle>
 			</CalendarGrid>
     </HomeWrapper>
   )
