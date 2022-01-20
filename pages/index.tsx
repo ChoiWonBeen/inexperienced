@@ -1,10 +1,10 @@
 import type { NextPage } from 'next';
 import styled from "styled-components";
-import SideLink from '../components/indexPage/SideLink';
+import Shortcut from '../components/indexPage/Shortcut';
 import Winrate from '../components/indexPage/Winrate';
 import DailyTodo from '../components/indexPage/DailyTodo';
 import Calendar from '../components/indexPage/Calendar';
-import IndexWithTitle from '../components/indexPage/IndexWithTitle';
+import IndexComponentWithTitle from '../components/indexPage/IndexComponentWithTitle';
 
 const HomeWrapper = styled.div`
   min-height: calc(100vh - 132px);
@@ -45,7 +45,7 @@ export default function MainPage<NextPage>(){
   return (
     <HomeWrapper>
 			<SideLinkGrid>
-				<IndexWithTitle Component={SideLink} titleText="ShortCut"></IndexWithTitle>
+				<IndexWithTitle Component={Shortcut} titleText="ShortCut"></IndexWithTitle>
 			</SideLinkGrid>
 			
       <WinrateGrid>
