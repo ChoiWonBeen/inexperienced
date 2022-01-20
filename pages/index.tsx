@@ -41,35 +41,6 @@ const CalendarGrid = styled.div`
 
 export default function MainPage<NextPage>(){
 	
-	const tempTodo = [
-		{
-			id: 1,
-			title: "Daily Todo",
-			due: "2022-01-20",
-			data: [
-				{
-					desc: "커밋 1개 하기"
-				},
-				{
-					desc: "알고리즘 1문제 풀기"
-				}
-			]
-		},
-		{
-			id: 2,
-			title: "Weekly Todo",
-			due: "2022-01-27",
-			data: [
-				{
-					desc: "좋은 글 1개 읽기"
-				},
-				{
-					desc: "비기너 강의 준비하기"
-				}
-			]
-		}
-	]
-	
   return (
     <HomeWrapper>
 			<SideLinkGrid>
@@ -81,11 +52,7 @@ export default function MainPage<NextPage>(){
       </WinrateGrid>
 			
 			<DailyTodoGrid>
-				<>
-					{tempTodo.map((todoList) => {
-						return <DailyTodo todoList={todoList} key={todoList.id}></DailyTodo>
-					})}
-				</>
+				<DailyTodo></DailyTodo>
 			</DailyTodoGrid>
 			
 			<CalendarGrid>
