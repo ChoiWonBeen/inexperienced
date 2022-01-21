@@ -4,13 +4,13 @@ import Shortcut from '../components/indexPage/Shortcut';
 import Winrate from '../components/indexPage/Winrate';
 import DailyTodo from '../components/indexPage/DailyTodo';
 import Calendar from '../components/indexPage/Calendar';
-import IndexComponentWithTitle from '../components/indexPage/IndexComponentWithTitle';
+import TitleDispenser from '../components/indexPage/TitleDispenser';
 
 const HomeWrapper = styled.div`
   min-height: calc(100vh - 132px);
   padding: 10px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   grid-template-rows: repeat(3, 5fr);
 	row-gap: 10px;
 	column-gap: 15px;
@@ -45,19 +45,19 @@ export default function MainPage<NextPage>(){
   return (
     <HomeWrapper>
 			<SideLinkGrid>
-				<IndexComponentWithTitle Component={Shortcut} titleText="ShortCut"></IndexComponentWithTitle>
+				<TitleDispenser Component={Shortcut} titleText="ShortCut"></TitleDispenser>
 			</SideLinkGrid>
 			
       <WinrateGrid>
-        <IndexComponentWithTitle Component={Winrate} titleText="My Winrate"></IndexComponentWithTitle>
+        <TitleDispenser Component={Winrate} titleText="My Winrate"></TitleDispenser>
       </WinrateGrid>
 			
 			<DailyTodoGrid>
-				<IndexComponentWithTitle Component={DailyTodo} titleText="My Todo"></IndexComponentWithTitle>
+				<TitleDispenser Component={DailyTodo} titleText="My Todo"></TitleDispenser>
 			</DailyTodoGrid>
 			
 			<CalendarGrid>
-				<IndexComponentWithTitle Component={Calendar} titleText="Calendar"></IndexComponentWithTitle>
+				<TitleDispenser Component={Calendar} titleText="Calendar"></TitleDispenser>
 			</CalendarGrid>
     </HomeWrapper>
   )

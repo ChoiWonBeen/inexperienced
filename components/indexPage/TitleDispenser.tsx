@@ -7,7 +7,7 @@ const Title = styled.div`
 	padding: 10px;
 `
 
-export default function IndexComponentWithTitle({Component, titleText}){
+export default function TitleDispenser({Component, titleText}){
 	
 	return (
 		<>
