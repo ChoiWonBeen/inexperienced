@@ -4,11 +4,23 @@ const ShortcutWrapper = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	height: 100%;
+	
 `
 
 const MyShortcut = styled.div`
-	width: 150px;
+	min-width: 130px;
+	min-height: 130px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border: 1px ${({theme}) => theme.colors.borderDefault} solid;
+	margin: 20px;
+`
+
+const LinkImg = styled.img`
+	width: 32px;
+	height: 32px;
 `
 
 const LinkName = styled.div`
@@ -24,8 +36,13 @@ export default function Shortcut(){
 		},
 		{
 			id: 2,
-			name: "solved.ac",
-			url: "https://www.solved.ac",
+			name: "youtube",
+			url: "https://www.youtube.com",
+		},
+		{
+			id: 3,
+			name: "naver",
+			url: "https://www.naver.com",
 		}
 	]
 	
@@ -34,7 +51,7 @@ export default function Shortcut(){
 			{tempShortcut.map((link) => {
 				return (
 					<MyShortcut key={link.id}>
-						<link rel="icon" type="image/png" href={`${link.url}/favicon.ico`} />
+						<LinkImg type="image/png" src={`${link.url}/favicon.ico`} />
 						<LinkName>{link.name}</LinkName>
 					</MyShortcut>
 				)
