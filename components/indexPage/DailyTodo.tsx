@@ -128,7 +128,7 @@ export default function DailyTodo(){
 						</TodoListWrapper>
 					</Block>
 					)
-				})
+				})	
 			}
 		</DailyTodoWrapper>
 	)
