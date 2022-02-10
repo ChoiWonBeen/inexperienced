@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const DailyTodoWrapper = styled.div`캡
+const DailyTodoWrapper = styled.div`
 	margin-bottom: 10px;
 `
 
@@ -54,17 +54,18 @@ const CheckBox = styled.input`
 `
 
 function getLeftTime(t: string): string{
-	if(Math.floor((new Date(t) - new Date()) / 1000 / 60) <= 0){
+	let diff:number = Number(new Date(t)) - Number(new Date());
+	if(Math.floor(diff / 1000 / 60) <= 0){
 		return "Soon!";
 	}
-	else if(Math.floor((new Date(t) - new Date()) / 1000 / 60) < 60){
-		return `${Math.floor((new Date(t) - new Date()) / 1000 / 60)}m left`;
+	else if(Math.floor(diff / 1000 / 60) < 60){
+		return `${Math.floor(diff / 1000 / 60)}m left`;
 	}
-	else if(Math.floor((new Date(t) - new Date()) / 1000 / 60 / 60) < 24){
-		return `${Math.floor((new Date(t) - new Date()) / 1000 / 60 / 60)}h left`;
+	else if(Math.floor(diff / 1000 / 60 / 60) < 24){
+		return `${Math.floor(diff / 1000 / 60 / 60)}h left`;
 	}
 	else {
-		return `${Math.floor((new Date(t) - new Date()) / 1000 / 60 / 60 / 24)}days left`;
+		return `${Math.floor(diff / 1000 / 60 / 60 / 24)}days left`;
 	}
 }
 
@@ -127,7 +128,7 @@ export default function DailyTodo(){
 						</TodoListWrapper>
 					</Block>
 					)
-				})
+				})	
 			}
 		</DailyTodoWrapper>
 	)

@@ -1,3 +1,5 @@
+import axios from "axios";
+import { useEffect } from "react";
 import styled from "styled-components";
 
 const WinrateWrapper = styled.div`
@@ -11,6 +13,14 @@ const Card = styled.div`
 `
 
 export default function Winrate(){
+  useEffect(() => {
+    async function getUserData(){
+      return await axios.get('https://to-do-it-backend-ciiqx.run.goorm.io/users').then((res) => {
+        console.log(res)
+      })
+    }
+    getUserData()
+  })
   return (
     <WinrateWrapper>
       <Card>

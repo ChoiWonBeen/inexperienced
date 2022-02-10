@@ -51,7 +51,7 @@ export default function Shortcut(){
 			{tempShortcut.map((link) => {
 				return (
 					<MyShortcut key={link.id}>
-						<LinkImg type="image/png" src={`${link.url}/favicon.ico`} />
+						<LinkImg src={`${link.url}/favicon.ico`} />
 						<LinkName>{link.name}</LinkName>
 					</MyShortcut>
 				)
