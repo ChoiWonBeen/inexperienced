@@ -19,7 +19,7 @@ export default function Winrate(){
         console.log(res)
       })
     }
-    getUserData()
+    // getUserData()
   })
   return (
     <WinrateWrapper>

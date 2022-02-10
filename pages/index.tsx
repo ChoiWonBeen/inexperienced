@@ -5,6 +5,7 @@ import Winrate from 'components/indexPage/Winrate';
 import DailyTodo from 'components/indexPage/DailyTodo';
 import Calendar from 'components/indexPage/Calendar';
 import TitleDispenser from 'components/indexPage/TitleDispenser';
+import { authFb } from 'static/fb.ts';
 
 const HomeWrapper = styled.div`
   min-height: calc(100vh - 132px);
@@ -41,7 +42,7 @@ const CalendarGrid = styled.div`
 `
 
 export default function MainPage<NextPage>(){
-	
+	console.log(authFb);
   return (
     <HomeWrapper>
 			<SideLinkGrid>
