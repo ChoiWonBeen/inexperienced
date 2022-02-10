@@ -1,10 +1,10 @@
 import type { NextPage } from 'next';
 import styled from "styled-components";
-import Shortcut from '../components/indexPage/Shortcut';
-import Winrate from '../components/indexPage/Winrate';
-import DailyTodo from '../components/indexPage/DailyTodo';
-import Calendar from '../components/indexPage/Calendar';
-import TitleDispenser from '../components/indexPage/TitleDispenser';
+import Shortcut from 'components/indexPage/Shortcut';
+import Winrate from 'components/indexPage/Winrate';
+import DailyTodo from 'components/indexPage/DailyTodo';
+import Calendar from 'components/indexPage/Calendar';
+import TitleDispenser from 'components/indexPage/TitleDispenser';
 
 const HomeWrapper = styled.div`
   min-height: calc(100vh - 132px);
