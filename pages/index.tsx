@@ -42,7 +42,7 @@ const CalendarGrid = styled.div`
 `
 
 export default function MainPage<NextPage>(){
-	console.log(authFb);
+	// console.log(authFb);
   return (
     <HomeWrapper>
 			<SideLinkGrid>
