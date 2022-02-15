@@ -4,6 +4,7 @@ import SEO from '../components/shared/SEO';
 import Header from '../components/shared/Header';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { theme } from '../static/theme.ts';
+import { mixin } from '../static/mixin.ts';
 
 const GlobalStyle = createGlobalStyle`
   html {

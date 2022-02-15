@@ -34,7 +34,7 @@ export default function Header(){
   return(
     <HeaderBar>
 			{modal && 
-			  <AuthModal></AuthModal>
+			  <AuthModal setModal={setModal}></AuthModal>
 			}
       <LogoText>toDo It!</LogoText>
 			<AuthNav>

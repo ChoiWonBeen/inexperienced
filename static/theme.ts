@@ -5,5 +5,12 @@ export const theme = {
     secondary: '#e74c3c',
     brown: '#642A02',
 		borderDefault: '#d0d7de',
-  }
+  },
+	mixins: {
+		flexCenterMixin: `
+			display:flex;
+			align-items: center;
+			justify-content:center;
+		`,
+	}
 }

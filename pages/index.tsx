@@ -15,6 +15,7 @@ const HomeWrapper = styled.div`
   grid-template-rows: repeat(3, 5fr);
 	row-gap: 10px;
 	column-gap: 15px;
+	asdfasdfasdf
 `
 
 const WinrateGrid = styled.div`

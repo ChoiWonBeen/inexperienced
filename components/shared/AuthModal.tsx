@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
-const ModalWrapper = styled.div`
+const ModalBackground = styled.div`
   position: fixed;
 	top:0;
 	left:0;
 	width: 100%;
 	height: 100%;
 	background-color: #0000006e;
+	${({ theme }) => theme.mixins.flexCenterMixin};
 `
 
 const LogoText = styled.div`
@@ -16,10 +17,19 @@ const LogoText = styled.div`
   margin-left: 20px;
 `
 
-export default function Header(){
+const ModalWrapper = styled.div`
+	width: 40%;
+	height: 60%;
+	background-color: white;
+	border-radius: 30px;
+`
+
+export default function AuthModal({setModal}){
   return(
-		<ModalWrapper>
+		<ModalBackground onClick={() => setModal(false)}>
+			<ModalWrapper>
 			
-		</ModalWrapper>
+			</ModalWrapper>
+		</ModalBackground>
   )
 }
