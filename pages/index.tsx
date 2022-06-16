@@ -4,8 +4,8 @@ import Shortcut from 'components/indexPage/Shortcut';
 import Winrate from 'components/indexPage/Winrate';
 import DailyTodo from 'components/indexPage/DailyTodo';
 import Calendar from 'components/indexPage/Calendar';
-import TitleDispenser from 'components/indexPage/TitleDispenser';
-import { authFb } from 'static/fb.ts';
+import Title from 'components/indexPage/Title';
+import { authFb } from 'static/fb';
 
 const HomeWrapper = styled.div`
   min-height: calc(100vh - 132px);
@@ -15,7 +15,6 @@ const HomeWrapper = styled.div`
   grid-template-rows: repeat(3, 5fr);
 	row-gap: 10px;
 	column-gap: 15px;
-	asdfasdfasdf
 `
 
 const WinrateGrid = styled.div`
@@ -47,19 +46,19 @@ export default function MainPage<NextPage>(){
   return (
     <HomeWrapper>
 			<SideLinkGrid>
-				<TitleDispenser Component={Shortcut} titleText="ShortCut"></TitleDispenser>
+				<Title Component={Shortcut} titleText="ShortCut"></Title>
 			</SideLinkGrid>
 			
       <WinrateGrid>
-        <TitleDispenser Component={Winrate} titleText="My Winrate"></TitleDispenser>
+        <Title Component={Winrate} titleText="My Winrate"></Title>
       </WinrateGrid>
 			
 			<DailyTodoGrid>
-				<TitleDispenser Component={DailyTodo} titleText="My Todo"></TitleDispenser>
+				<Title Component={DailyTodo} titleText="My Todo"></Title>
 			</DailyTodoGrid>
 			
 			<CalendarGrid>
-				<TitleDispenser Component={Calendar} titleText="Calendar"></TitleDispenser>
+				<Title Component={Calendar} titleText="Calendar"></Title>
 			</CalendarGrid>
     </HomeWrapper>
   )

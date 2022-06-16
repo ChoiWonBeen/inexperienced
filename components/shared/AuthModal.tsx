@@ -24,7 +24,7 @@ const ModalWrapper = styled.div`
 	border-radius: 30px;
 `
 
-export default function AuthModal({setModal}){
+export default function AuthModal({setModal} : any){
   return(
 		<ModalBackground onClick={() => setModal(false)}>
 			<ModalWrapper>

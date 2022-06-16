@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import AuthModal from "./AuthModal.tsx";
+import AuthModal from "./AuthModal";
 
 const HeaderBar = styled.div`
   border-bottom: 5px ${({theme}) => theme.colors.primary} solid;

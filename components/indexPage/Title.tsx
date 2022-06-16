@@ -1,19 +1,19 @@
 import styled from "styled-components";
 
-const Title = styled.div`
+const TitleText = styled.div`
 	font-size: 20px;
 	font-weight: bold;
 	font-style: italic;
 	padding: 10px;
 `
 
-export default function TitleDispenser({Component, titleText}){
+export default function Title({Component, titleText}: any){
 	
 	return (
 		<>
-			<Title>
+			<TitleText>
 				{titleText}
-			</Title>
+			</TitleText>
 			<Component/>
 		</>
 	)
